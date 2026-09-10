@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- SEO -->
     <title>Voltix | Nuestra historia</title>
     <meta name="description"
@@ -79,7 +82,7 @@
                             romper las reglas — para una nueva generación que escucha música, juega y vive conectada.
                         </p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <img src="../assets/img/ondas-de-sonido.png"
                             alt="Ondas de sonido abstractas en cian y magenta representando la identidad Voltix"
                             class="historia__imagen img-fluid">
@@ -95,7 +98,7 @@
 
                 <div class="row g-3">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
                         <article class="tarjeta-valor">
                             <i class="bi bi-lightbulb tarjeta-valor__icono"></i>
                             <h3 class="tarjeta-valor__titulo">Innovación</h3>
@@ -104,7 +107,7 @@
                         </article>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                         <article class="tarjeta-valor">
                             <i class="bi bi-tree tarjeta-valor__icono"></i>
                             <h3 class="tarjeta-valor__titulo">Sustentabilidad</h3>
@@ -113,7 +116,7 @@
                         </article>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <article class="tarjeta-valor tarjeta-valor--acento">
                             <i class="bi bi-people tarjeta-valor__icono"></i>
                             <h3 class="tarjeta-valor__titulo">Comunidad</h3>
@@ -182,6 +185,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

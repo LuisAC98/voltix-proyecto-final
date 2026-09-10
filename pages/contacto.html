@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- SEO -->
     <title>Voltix | Contacto</title>
     <meta name="description"
@@ -78,7 +81,7 @@
                 <div class="row g-4">
 
                     <div class="col-lg-6">
-                        <form class="contacto__formulario" novalidate>
+                        <form class="contacto__formulario" novalidate data-aos="fade-right">
 
                             <div class="mb-3">
                                 <label for="contactName" class="form-label">Nombre</label>
@@ -112,7 +115,7 @@
                         </form>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <img src="../assets/img/contacto-imagen.png" alt="Ondas de sonido abstractas en cian y magenta"
                             class="contacto__imagen img-fluid">
                         <ul class="contacto__info">
@@ -185,6 +188,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

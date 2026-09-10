@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- SEO -->
     <title>Voltix | Catálogo de auriculares inalámbricos</title>
     <meta name="description"
@@ -79,7 +82,7 @@
                 <div class="row g-4">
 
                     <div class="col-md-4">
-                        <article class="tarjeta-producto">
+                        <article class="tarjeta-producto" data-aos="fade-up" data-aos-delay="0">
                             <span class="tarjeta-producto__etiqueta tarjeta-producto__etiqueta--oferta">Sale</span>
                             <img src="../assets/img/Voltix-Pro-X.png" alt="Auriculares Voltix Pro X"
                                 class="tarjeta-producto__imagen img-fluid">
@@ -99,7 +102,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <article class="tarjeta-producto">
+                        <article class="tarjeta-producto" data-aos="fade-up" data-aos-delay="150">
                             <span class="tarjeta-producto__etiqueta tarjeta-producto__etiqueta--nuevo">Nuevo</span>
                             <img src="../assets/img/Voltix-Air.png" alt="Auriculares Voltix Air"
                                 class="tarjeta-producto__imagen img-fluid">
@@ -118,7 +121,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <article class="tarjeta-producto tarjeta-producto--limitada">
+                        <article class="tarjeta-producto tarjeta-producto--limitada" data-aos="fade-up" data-aos-delay="300">
                             <span class="tarjeta-producto__etiqueta tarjeta-producto__etiqueta--limitada">Edición
                                 limitada</span>
                             <img src="../assets/img/Voltix-Neon-Edition.png" alt="Auriculares Voltix Neon Edition"
@@ -425,6 +428,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

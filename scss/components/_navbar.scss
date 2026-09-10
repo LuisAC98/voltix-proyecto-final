@@ -1,0 +1,25 @@
+// scss/components/_navbar.scss
+@use '../base/variables' as *;
+
+.navbar {
+  background-color: $bg-dark;
+
+  --bs-navbar-color: #{$text-secondary};
+  --bs-navbar-hover-color: #{$accent-primary};
+  --bs-navbar-active-color: #{$accent-primary};
+  --bs-navbar-brand-color: #{$accent-primary};
+  --bs-navbar-brand-hover-color: #{$accent-primary};
+  --bs-navbar-toggler-border-color: #{$accent-primary};
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: $font-main;
+}
+
+.navbar-toggler {
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($accent-primary, 0.4);
+  }
+}

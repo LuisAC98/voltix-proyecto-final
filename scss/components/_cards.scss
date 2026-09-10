@@ -1,0 +1,146 @@
+// scss/components/_cards.scss
+@use '../base/variables' as *;
+@use '../base/extend' as *;
+@use '../base/mixins' as *;
+
+// ===== Especificaciones (index) =====
+.tarjeta-especificacion {
+  @extend %tarjeta-base;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $accent-primary;
+  }
+
+  &--acento {
+    border-color: $accent-secondary;
+  }
+}
+
+.tarjeta-especificacion__icono {
+  @extend %icono-tarjeta;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.tarjeta-especificacion__texto {
+  color: $text-secondary;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+// ===== Características (index, "Por qué elegir Voltix") =====
+.tarjeta-caracteristica {
+  @extend %tarjeta-base;
+
+  &--acento {
+    border-color: $accent-secondary;
+  }
+}
+
+.tarjeta-caracteristica__icono {
+  @extend %icono-tarjeta;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.tarjeta-caracteristica__titulo {
+  color: $text-primary;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+// ===== Valores (acerca-de) =====
+.tarjeta-valor {
+  @extend %tarjeta-base;
+
+  &--acento {
+    border-color: $accent-secondary;
+  }
+}
+
+.tarjeta-valor__icono {
+  @extend %icono-tarjeta;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.tarjeta-valor__titulo {
+  color: $text-primary;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.tarjeta-valor__texto {
+  color: $text-secondary;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+// ===== Productos =====
+.tarjeta-producto {
+  @extend %tarjeta-base;
+
+  &--limitada {
+    border-color: $accent-secondary;
+  }
+}
+
+.tarjeta-producto__etiqueta {
+  @extend %etiqueta-base;
+  margin-bottom: 0.5rem;
+
+  &--oferta {
+    background-color: $accent-secondary;
+  }
+
+  &--nuevo {
+    background-color: $accent-primary;
+  }
+
+  &--limitada {
+    background-color: $accent-secondary;
+  }
+}
+
+.tarjeta-producto__imagen {
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.tarjeta-producto__nombre {
+  color: $text-primary;
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.tarjeta-producto__calificacion {
+  color: $text-secondary;
+  font-size: 0.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.tarjeta-producto__caracteristicas {
+  color: $text-secondary;
+  font-size: 0.8rem;
+  margin: 0 0 0.75rem;
+  text-align: left;
+}
+
+.tarjeta-producto__precio {
+  margin: 0 0 0.75rem;
+}
+
+.tarjeta-producto__precio-anterior {
+  color: $text-muted;
+  text-decoration: line-through;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+
+.tarjeta-producto__precio-final {
+  color: $accent-primary;
+  font-size: 1.1rem;
+  font-weight: 600;
+}

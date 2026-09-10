@@ -1,0 +1,16 @@
+@use 'resets/reset';
+
+@use 'base/variables';
+@use 'base/mixins';
+@use 'base/extend';
+
+@use 'components/navbar';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/footer';
+
+@use 'secciones/portada';
+@use 'secciones/catalogo';
+@use 'secciones/historia';
+@use 'secciones/preguntas-frecuentes';
+@use 'secciones/contacto';

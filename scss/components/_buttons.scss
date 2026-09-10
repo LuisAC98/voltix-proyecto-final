@@ -1,0 +1,21 @@
+// scss/components/_buttons.scss
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use '../base/extend' as *;
+
+.btn-neon {
+  @extend %boton-forma;
+  @include boton-color($accent-primary);
+}
+
+.btn-outline-neon {
+  @extend %boton-forma;
+  background-color: transparent;
+  color: $accent-primary;
+  border-color: $accent-primary;
+
+  &:hover {
+    background-color: $accent-primary;
+    color: $bg-dark;
+  }
+}

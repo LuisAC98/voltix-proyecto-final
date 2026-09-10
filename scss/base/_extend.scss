@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+%tarjeta-base {
+  background-color: $bg-card;
+  border: 1px solid $border-subtle;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+%icono-tarjeta {
+  font-size: 1.5rem;
+  color: $accent-primary;
+}
+
+%etiqueta-base {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: $bg-dark;
+}
+
+%boton-forma {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+  text-align: center;
+}

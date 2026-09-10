@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+// Mixins de breakpoints
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Mixin con parámetro — genera un botón según el color que le pases
+@mixin boton-color($color) {
+  background-color: $color;
+  color: $bg-dark;
+  border-color: $color;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

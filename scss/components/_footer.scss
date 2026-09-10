@@ -1,0 +1,71 @@
+@use '../base/variables' as *;
+
+.pie-pagina {
+  background-color: $bg-dark;
+  border-top: 1px solid $border-subtle;
+  padding: 2rem 0 1rem;
+}
+
+.pie-pagina__marca {
+  color: $accent-primary;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0 0 0.5rem;
+}
+
+.pie-pagina__texto {
+  color: $text-secondary;
+  font-size: 0.85rem;
+}
+
+.pie-pagina__titulo {
+  color: $text-primary;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.pie-pagina__enlaces {
+  li {
+    margin-bottom: 0.4rem;
+  }
+
+  a {
+    color: $text-secondary;
+    font-size: 0.85rem;
+    transition: color 1.2s ease;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+}
+
+.pie-pagina__redes {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+
+  a {
+    color: $text-secondary;
+    font-size: 1.2rem;
+    transition: color 1.4s ease;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+}
+
+.pie-pagina__divisor {
+  border-color: $border-subtle;
+  margin: 1.5rem 0 1rem;
+}
+
+.pie-pagina__copyright {
+  color: $text-muted;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0;
+}

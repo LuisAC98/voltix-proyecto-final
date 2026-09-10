@@ -1,0 +1,39 @@
+@use '../base/variables' as *;
+
+.preguntas-frecuentes {
+  padding: 3rem 0;
+  background-color: $bg-dark;
+
+  .accordion-item {
+    background-color: $bg-card;
+    border: 1px solid $border-subtle;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .accordion-button {
+    background-color: $bg-card;
+    color: $text-primary;
+    font-weight: 600;
+
+    &:not(.collapsed) {
+      background-color: rgba($accent-primary, 0.1);
+      color: $accent-primary;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($accent-primary, 0.3);
+    }
+
+    &::after {
+      filter: invert(1);
+    }
+  }
+
+  .accordion-body {
+    background-color: $bg-card;
+    color: $text-secondary;
+    font-size: 0.9rem;
+  }
+}

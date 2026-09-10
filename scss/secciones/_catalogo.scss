@@ -1,0 +1,95 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+// ===== Clases compartidas =====
+.titulo-seccion {
+  color: $text-primary;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @include desktop {
+    font-size: 2rem;
+  }
+}
+
+.encabezado-pagina {
+  padding: 3rem 0 2rem;
+  background-color: $bg-dark;
+}
+
+.encabezado-pagina__titulo {
+  color: $text-primary;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.encabezado-pagina__texto {
+  color: $text-secondary;
+  font-size: 0.95rem;
+}
+
+// ===== Catálogo-productos.html =====
+.catalogo {
+  padding: 3rem 0;
+  background-color: $bg-dark;
+}
+
+.especificaciones-detalladas {
+  padding: 3rem 0;
+  background-color: $bg-dark;
+
+  .nav-pills {
+    margin-bottom: 2rem;
+
+    .nav-link {
+      color: $text-secondary;
+      border-radius: 6px;
+      margin: 0 0.25rem;
+
+      &.active {
+        background-color: $accent-primary;
+        color: $bg-dark;
+      }
+    }
+  }
+}
+
+// ===== Ventana de especificaciones =====
+.modal-content {
+  background-color: $bg-card;
+  border: 1px solid $border-subtle;
+}
+
+.modal-header {
+  border-color: $border-subtle;
+}
+
+.modal-title {
+  color: $text-primary;
+  font-size: 1.1rem;
+}
+
+.modal-body {
+  color: $text-secondary;
+  font-size: 0.9rem;
+
+  ul {
+    margin-top: 0.75rem;
+
+    li {
+      margin-bottom: 0.4rem;
+
+      &::before {
+        content: '✓ ';
+        color: $accent-primary;
+      }
+    }
+  }
+}
+
+.btn-close {
+  filter: invert(1);
+}

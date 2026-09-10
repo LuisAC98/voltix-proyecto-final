@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- CSS  -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -32,7 +32,8 @@
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">VOLTIX</a>
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/voltix-logo.png" alt="Voltix"
+                        height="24"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                     aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
@@ -80,10 +81,9 @@
                     <div class="col-md-4">
                         <article class="tarjeta-producto">
                             <span class="tarjeta-producto__etiqueta tarjeta-producto__etiqueta--oferta">Sale</span>
-                            <img src="../assets/img/producto-pro-x.png" alt="Auriculares Voltix Pro X"
+                            <img src="../assets/img/Voltix-Pro-X.png" alt="Auriculares Voltix Pro X"
                                 class="tarjeta-producto__imagen img-fluid">
                             <h2 class="tarjeta-producto__nombre">Voltix Pro X</h2>
-                            <p class="tarjeta-producto__calificacion">★★★★★ <span>1284 reseñas</span></p>
                             <ul class="tarjeta-producto__caracteristicas">
                                 <li>Cancelación de ruido</li>
                                 <li>30hs de batería</li>
@@ -93,17 +93,17 @@
                                 <span class="tarjeta-producto__precio-anterior">$299</span>
                                 <span class="tarjeta-producto__precio-final">$199</span>
                             </p>
-                            <a href="#specsPro" class="btn btn-neon w-100">Ver especificaciones</a>
+                            <button type="button" class="btn btn-outline-neon w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalProX">Ver especificaciones</button>
                         </article>
                     </div>
 
                     <div class="col-md-4">
                         <article class="tarjeta-producto">
                             <span class="tarjeta-producto__etiqueta tarjeta-producto__etiqueta--nuevo">Nuevo</span>
-                            <img src="../assets/img/producto-air.png" alt="Auriculares Voltix Air"
+                            <img src="../assets/img/Voltix-Air.png" alt="Auriculares Voltix Air"
                                 class="tarjeta-producto__imagen img-fluid">
                             <h2 class="tarjeta-producto__nombre">Voltix Air</h2>
-                            <p class="tarjeta-producto__calificacion">★★★★☆ <span>842 reseñas</span></p>
                             <ul class="tarjeta-producto__caracteristicas">
                                 <li>Ultra liviano (180g)</li>
                                 <li>20hs de batería</li>
@@ -112,7 +112,8 @@
                             <p class="tarjeta-producto__precio">
                                 <span class="tarjeta-producto__precio-final">$129</span>
                             </p>
-                            <a href="#specsAir" class="btn btn-outline-neon w-100">Ver especificaciones</a>
+                            <button type="button" class="btn btn-outline-neon w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalAir">Ver especificaciones</button>
                         </article>
                     </div>
 
@@ -120,10 +121,9 @@
                         <article class="tarjeta-producto tarjeta-producto--limitada">
                             <span class="tarjeta-producto__etiqueta tarjeta-producto__etiqueta--limitada">Edición
                                 limitada</span>
-                            <img src="../assets/img/producto-neon.png" alt="Auriculares Voltix Neon Edition"
+                            <img src="../assets/img/Voltix-Neon-Edition.png" alt="Auriculares Voltix Neon Edition"
                                 class="tarjeta-producto__imagen img-fluid">
                             <h2 class="tarjeta-producto__nombre">Voltix Neon Edition</h2>
-                            <p class="tarjeta-producto__calificacion">★★★★★ <span>367 reseñas</span></p>
                             <ul class="tarjeta-producto__caracteristicas">
                                 <li>Carcasa con luces RGB</li>
                                 <li>Modo turbo gamer</li>
@@ -132,10 +132,87 @@
                             <p class="tarjeta-producto__precio">
                                 <span class="tarjeta-producto__precio-final">$179</span>
                             </p>
-                            <a href="#specsNeon" class="btn btn-outline-neon w-100">Ver especificaciones</a>
+                            <button type="button" class="btn btn-outline-neon w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalNeon">Ver especificaciones</button>
                         </article>
                     </div>
 
+                </div>
+                <!-- ventana Pro X -->
+                <div class="modal fade" id="modalProX" tabindex="-1" aria-labelledby="modalProXLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="modalProXLabel">Voltix Pro X — Especificaciones</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Pensados para quienes no negocian calidad de audio. Con 2 altavoces + subwoofer
+                                    dedicado, logran una cancelación de ruido que se adapta al entorno.</p>
+                                <ul>
+                                    <li>2 altavoces + subwoofer</li>
+                                    <li>6 micrófonos</li>
+                                    <li>Cancelación de ruido activa</li>
+                                    <li>30hs de batería (con ANC activo)</li>
+                                    <li>Resistencia al agua IP55</li>
+                                    <li>Bluetooth 5.3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ventana Air -->
+                <div class="modal fade" id="modalAir" tabindex="-1" aria-labelledby="modalAirLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="modalAirLabel">Voltix Air — Especificaciones</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Livianos y compactos, pensados para llevar a todos lados sin renunciar a buen sonido.
+                                </p>
+                                <ul>
+                                    <li>Ultra liviano (180g)</li>
+                                    <li>20hs de batería</li>
+                                    <li>Resistencia al agua IPX5</li>
+                                    <li>Bluetooth 5.2</li>
+                                    <li>2 micrófonos</li>
+                                    <li>Disponible en 2 colores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ventana Neon Edition -->
+                <div class="modal fade" id="modalNeon" tabindex="-1" aria-labelledby="modalNeonLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="modalNeonLabel">Voltix Neon Edition — Especificaciones</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Diseño gamer con carcasa RGB, pensados para quienes buscan destacarse tanto en sonido
+                                    como en estilo.</p>
+                                <ul>
+                                    <li>Carcasa con luces RGB</li>
+                                    <li>Modo turbo gamer</li>
+                                    <li>28hs de batería</li>
+                                    <li>Cancelación de ruido</li>
+                                    <li>Estuche premium incluido</li>
+                                    <li>Bluetooth 5.3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

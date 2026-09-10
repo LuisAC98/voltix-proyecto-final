@@ -20,6 +20,7 @@
   border-color: $color;
 
   &:hover {
-    opacity: 0.85;
+    background-color: $color;
+    box-shadow: 0 0 16px rgba($color, 0.6);
   }
 }

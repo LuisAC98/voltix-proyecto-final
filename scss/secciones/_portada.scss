@@ -1,0 +1,81 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.portada {
+  padding: 3rem 0;
+  background-color: $bg-dark;
+}
+
+.portada__etiqueta {
+  color: $accent-secondary;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.portada__titulo {
+  color: $text-primary;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+  @include tablet {
+    font-size: 2.4rem;
+  }
+
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+.portada__texto {
+  color: $text-secondary;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.portada__precio {
+  margin-bottom: 0.5rem;
+
+  &-anterior {
+    color: $text-muted;
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  &-final {
+    color: $accent-primary;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+}
+
+.portada__imagen {
+  border-radius: 12px;
+  margin-top: 2rem;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+// ===== Especificaciones Pro X (index) =====
+.especificaciones {
+  padding: 3rem 0;
+  background-color: $bg-dark;
+}
+
+.especificaciones__antetitulo {
+  color: $accent-primary;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+// ===== Por qué elegir Voltix (index) =====
+.caracteristicas {
+  padding: 3rem 0;
+  background-color: $bg-dark;
+}
